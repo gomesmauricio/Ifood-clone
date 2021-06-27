@@ -54,7 +54,7 @@
             android:textColor="@color/white" />
 
         <Switch
-            android:id="@+id/switchTipoUsuario"
+            android:id="@+id/switchAcesso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"

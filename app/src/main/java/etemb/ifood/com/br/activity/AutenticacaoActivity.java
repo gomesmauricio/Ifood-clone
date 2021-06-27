@@ -43,7 +43,7 @@ public class AutenticacaoActivity extends AppCompatActivity {
 
         inicializarComponentes();
         autenticacao = ConfiguracaoFirebase.getReferenciaAutenticacao();
-        //autenticacao.signOut();
+        autenticacao.signOut();
 
         //Verificar usuario logado
         verificaUsuarioLogado();
@@ -167,7 +167,7 @@ public class AutenticacaoActivity extends AppCompatActivity {
         campoEmail = findViewById(R.id.editCadastroEmail);
         campoSenha = findViewById(R.id.editCadastroSenha);
         botaoAcessar = findViewById(R.id.buttonAcesso);
-        tipoAcesso = findViewById(R.id.switchTipoUsuario);
+        tipoAcesso = findViewById(R.id.switchAcesso);
         tipoUsuario = findViewById(R.id.switchTipoUsuario);
         linearTipoUsuario = findViewById(R.id.linearTipoUsuario);
     }

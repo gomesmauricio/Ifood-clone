@@ -44,6 +44,7 @@ public class EmpresaActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.menuSair :
                 deslogarUsuario();
+                finish();
                 break;
 
             case R.id.menuConfiguracoes:
