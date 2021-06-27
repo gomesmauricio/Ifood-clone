@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "146930342482",
+    "project_id": "ifood-5e96a",
+    "storage_bucket": "ifood-5e96a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146930342482:android:40fc2c87022bdb31829d8b",
+        "android_client_info": {
+          "package_name": "etemb.ifood.com.br"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146930342482-b9ofju4bfo3a34sau5jud8ovc6p4nete.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAFGO5J3vC5fcCrviqiqJdswbJ1pg8was"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146930342482-b9ofju4bfo3a34sau5jud8ovc6p4nete.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
