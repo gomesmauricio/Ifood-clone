@@ -27,7 +27,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         inicializarComponentes();
-        autenticacao = ConfiguracaoFirebase.getReferenciaAutenticacao();
+        autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
 
         //Configuraççoes Toobar
         Toolbar toolbar = findViewById(R.id.toolbar);

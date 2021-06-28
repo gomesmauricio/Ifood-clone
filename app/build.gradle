@@ -48,6 +48,9 @@ dependencies {
 
     /*CircleImageView*/
     implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    /*Picasso*/
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }
 
 apply plugin: 'com.google.gms.google-services'

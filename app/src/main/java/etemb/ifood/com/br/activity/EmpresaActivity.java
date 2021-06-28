@@ -24,7 +24,7 @@ public class EmpresaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_empresa);
 
-        autenticacao = ConfiguracaoFirebase.getReferenciaAutenticacao();
+        autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
 
         //Configuraççoes Toobar
         Toolbar toolbar = findViewById(R.id.toolbar);

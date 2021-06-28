@@ -27,6 +27,7 @@ import java.net.URI;
 import etemb.ifood.com.br.R;
 import etemb.ifood.com.br.helper.ConfiguracaoFirebase;
 import etemb.ifood.com.br.helper.UsuarioFirebase;
+import etemb.ifood.com.br.model.Empresa;
 
 public class ConfiguracoesEmpresaActivity extends AppCompatActivity {
 
@@ -67,6 +68,45 @@ public class ConfiguracoesEmpresaActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+    public void validarDadosEmpresa(View view){
+
+        //Valida se os campos foram preenchidos
+        String nome = editEmpresaNome.getText().toString();
+        String taxa = editEmpresaTaxa.getText().toString();
+        String categoria = editEmpresaCategoria.getText().toString();
+        String tempo = editEmpresaTempo.getText().toString();
+
+        if (!nome.isEmpty()){
+            if (!taxa.isEmpty()){
+                if (!categoria.isEmpty()){
+                    if (!tempo.isEmpty()){
+                        Empresa empresa = new Empresa();
+                        empresa.setIdUsuario(idUsuarioLogado);
+                        empresa.setNome(nome);
+                        empresa.setPrecoEntrega(Double.parseDouble(taxa));
+                        empresa.setCategoria(categoria);
+                        empresa.setTempo(tempo);
+                        empresa.setUrlImagem(urlImagemSelecionada);
+                        empresa.salvar();
+                        finish();
+                    }else {
+                        exibirMensagem("Informe o tempo mediao de entrega!");
+                    }
+                }else {
+                    exibirMensagem("Informe uma categoria!");
+                }
+            }else {
+                exibirMensagem("Digite uma taxa de entrega!");
+            }
+        }else {
+            exibirMensagem("Digite um nome para a empresa!");
+        }
+    }
+
+    private void exibirMensagem(String texto){
+        Toast.makeText(this, texto, Toast.LENGTH_SHORT)
+                .show();
     }
 
     @Override
@@ -111,7 +151,6 @@ public class ConfiguracoesEmpresaActivity extends AppCompatActivity {
                     }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                         @Override
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
                             urlImagemSelecionada = taskSnapshot.getDownloadUrl().toString();
                             Toast.makeText(ConfiguracoesEmpresaActivity.this,
                                     "Sucesso ao fazer o upload da imagem",
