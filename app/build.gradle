@@ -45,6 +45,9 @@ dependencies {
 
     /*Searchview*/
     implementation 'com.miguelcatalan:materialsearchview:1.4.0'
+
+    /*CircleImageView*/
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
 }
 
 apply plugin: 'com.google.gms.google-services'
