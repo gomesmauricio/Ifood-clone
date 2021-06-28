@@ -7,16 +7,16 @@ import android.os.Bundle;
 
 import etemb.ifood.com.br.R;
 
-public class ConfiguracoesEmpresaActivity extends AppCompatActivity {
+public class ConfiguracoesUsuarioActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_configuracoes_empresa);
+        setContentView(R.layout.activity_configuracoes_usuario);
 
         //Configuraççoes Toobar
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("Configurações");
+        toolbar.setTitle("Configurações usuário");
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
