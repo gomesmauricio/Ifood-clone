@@ -27,7 +27,7 @@
             android:src="@drawable/perfil" />
 
         <EditText
-            android:id="@+id/editEmpresaNome"
+            android:id="@+id/editProdutoNome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_edit_text"
@@ -37,7 +37,7 @@
             android:padding="16dp" />
 
         <EditText
-            android:id="@+id/editEmpresaCategoria"
+            android:id="@+id/editProdutoDescricao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="-2dp"
@@ -59,14 +59,14 @@
             android:padding="16dp" />
 
         <EditText
-            android:id="@+id/editEmpresaTaxa"
+            android:id="@+id/editProdutoPreco"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="-2dp"
             android:background="@drawable/bg_edit_text"
             android:ems="10"
             android:hint="Taxa de entrega"
-            android:inputType="text"
+            android:inputType="numberDecimal"
             android:padding="16dp" />
 
         <Button

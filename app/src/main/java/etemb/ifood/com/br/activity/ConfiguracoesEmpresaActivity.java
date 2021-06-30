@@ -1,7 +1,6 @@
 package etemb.ifood.com.br.activity;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -27,7 +26,6 @@ import com.squareup.picasso.Picasso;
 
 
 import java.io.ByteArrayOutputStream;
-import java.net.URI;
 
 import etemb.ifood.com.br.R;
 import etemb.ifood.com.br.helper.ConfiguracaoFirebase;
@@ -209,9 +207,9 @@ public class ConfiguracoesEmpresaActivity extends AppCompatActivity {
 
     private void inicializarComponentes(){
 
-        editEmpresaNome = findViewById(R.id.editEmpresaNome);
-        editEmpresaCategoria = findViewById(R.id.editEmpresaCategoria);
-        editEmpresaTaxa = findViewById(R.id.editEmpresaTaxa);
+        editEmpresaNome = findViewById(R.id.editProdutoNome);
+        editEmpresaCategoria = findViewById(R.id.editProdutoDescricao);
+        editEmpresaTaxa = findViewById(R.id.editProdutoPreco);
         editEmpresaTempo = findViewById(R.id.editEmpresaTempo);
         imagePerfilEmpresa = findViewById(R.id.imagePerfilEmpresa);
     }

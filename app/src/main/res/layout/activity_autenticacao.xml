@@ -18,7 +18,7 @@
         android:layout_marginBottom="20dp"/>
 
     <EditText
-        android:id="@+id/editEmpresaNome"
+        android:id="@+id/editProdutoNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_edit_text"
@@ -28,7 +28,7 @@
         android:padding="16dp" />
 
     <EditText
-        android:id="@+id/editEmpresaCategoria"
+        android:id="@+id/editProdutoDescricao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="-2dp"
